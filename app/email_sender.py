@@ -7,12 +7,12 @@ from pathlib import Path
 html = Template(Path('index.html').read_text())
 smtp_server = 'smtp.gmail.com'
 port = 587
-sender = 'guicfdev@gmail.com'
+sender = 'teste@gmail.com'
 # guidev123@
 pass_sender = getpass.getpass(prompt='Password: ', stream=None)
 email = EmailMessage()
-email['from'] = 'Guilherme Fernandes'
-email['to'] = 'guilhermecfsp@gmail.com'
+email['from'] = 'Guilherme'
+email['to'] = 'teste@gmail.com'
 email['subject'] = 'You won 1,000,000 dollars'
 
 # email.set_content('I am a Python Master!')
